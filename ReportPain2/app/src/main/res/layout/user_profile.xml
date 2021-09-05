@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <include
+        layout="@layout/up_toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/ph_b"
+        android:elevation="3dp">
+
+
+        <TextView
+            android:id="@+id/upFullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_blue"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/upUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upFullname"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+        <TextView
+            android:id="@+id/upDateOfBirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/upUsername"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:textSize="25sp"
+            android:textColor="@color/dark_blue"/>
+        <TextView
+            android:id="@+id/text_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upDateOfBirth"
+            android:layout_toLeftOf="@id/text_height"
+            android:paddingRight="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="37dp"
+            android:textColor="@color/dark_blue"
+            android:text="Weight" />
+        <TextView
+            android:id="@+id/text_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upDateOfBirth"
+            android:layout_centerHorizontal="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/dark_blue"
+            android:text="Height"/>
+        <TextView
+            android:id="@+id/text_BMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upDateOfBirth"
+            android:layout_toRightOf="@id/text_height"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="46dp"
+            android:textColor="@color/dark_blue"
+            android:text="BMI"
+            android:elevation="5dp"/>
+
+        <TextView
+            android:id="@+id/upWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_weight"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/upHeight"
+            android:paddingRight="15dp"
+            android:textColor="@color/dark_blue"
+            android:textSize="30sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="1.5dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/upWeight"
+            android:layout_below="@id/upDateOfBirth"
+            android:background="@color/dark_blue"
+            android:padding="5dp"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/upHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/dark_blue"
+            android:textSize="30sp" />
+        <View
+            android:id="@+id/line2"
+            android:layout_width="1.5dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/upHeight"
+            android:layout_below="@id/upDateOfBirth"
+            android:background="@color/dark_blue"
+            android:padding="5dp"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/upBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_BMI"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/upHeight"
+            android:paddingLeft="15dp"
+            android:textColor="@color/dark_blue"
+            android:textSize="30sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upBMI"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="Edit"
+            android:backgroundTint="@color/dark_blue"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

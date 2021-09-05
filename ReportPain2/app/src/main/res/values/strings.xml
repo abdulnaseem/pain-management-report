@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ReportPain</string>
+    <string name="human_anatomy">Human Anatomy</string>
+    <string name="daily_diary">Daily Diary</string>
+    <string name="p_daily_diary">Personal Daily Diary</string>
+
+    <string name="analytics">Analytics</string>
+    <string name="user">User Profile</string>
+    <string name="logout">Logout</string>
+
+    <string name="sign_up"> </string>
+
+</resources>

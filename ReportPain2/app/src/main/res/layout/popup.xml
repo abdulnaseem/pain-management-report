@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/su_popup"
+    android:layout_gravity="center_horizontal|center_vertical">
+    <TextView
+        android:id="@+id/tvCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Use an online converter to convert your height from feet and inches to metres."
+        android:textSize="12dp"
+        android:textColor="#ffffff"
+        android:padding="10dp"/>
+</RelativeLayout>

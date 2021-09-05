@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.reportpain">
+
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ReportPain">
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.Login" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SignUp"
+            android:label="@string/sign_up">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SignUp" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".HumanAnatomy">
+            <intent-filter>
+                <action android:name="android.intent.action.HumanAnatomy" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".UserProfile">
+            <intent-filter>
+                <action android:name="android.intent.action.UserProfile" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".EditUserProfile"
+            android:label="">
+
+            <intent-filter>
+                <action android:name="android.intent.action.EditUserProfile" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PersonalDD"
+            android:label="Personal Daily Diary"
+            android:parentActivityName=".HumanAnatomy">
+
+            <intent-filter>
+                <action android:name="android.intent.action.PersonalDD" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Entry"
+            android:label=" "
+            android:parentActivityName=".PersonalDD">
+
+            <intent-filter>
+                <action android:name="android.intent.action.Entry" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".UpdateDiary"
+            android:label=" "
+            android:parentActivityName=".PersonalDD">
+
+            <intent-filter>
+                <action android:name="android.intent.action.UpdateDiary" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

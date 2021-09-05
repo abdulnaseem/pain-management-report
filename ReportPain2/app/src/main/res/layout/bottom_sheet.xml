@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:id="@+id/human_anatomy"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="#f5f5f5">
+
+        <ImageView
+            android:id="@+id/human"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/human"/>
+        <TextView
+            android:id="@+id/ha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/human"
+            android:layout_centerVertical="true"
+            android:text="Human Anatomy"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/daily_diary"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/human_anatomy"
+        android:background="#f5f5f5">
+        <ImageView
+            android:id="@+id/diary"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/diary"/>
+        <TextView
+            android:id="@+id/txt_dd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/diary"
+            android:layout_centerVertical="true"
+            android:text="Daily Diary"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/analytics"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+    android:layout_below="@id/daily_diary"
+        android:background="#f5f5f5">
+        <ImageView
+            android:id="@+id/img_ana"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/analytics"/>
+        <TextView
+            android:id="@+id/txt_aa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_ana"
+            android:layout_centerVertical="true"
+            android:text="Analytics"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

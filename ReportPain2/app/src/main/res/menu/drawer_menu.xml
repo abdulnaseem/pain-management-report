@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/user"
+            android:icon="@drawable/user"
+            android:title="@string/user" />
+        <item
+            android:id="@+id/human_A"
+            android:icon="@drawable/human"
+            android:title="@string/human_anatomy" />
+        <item
+            android:id="@+id/daily_D"
+            android:icon="@drawable/diary"
+            android:title="@string/p_daily_diary"/>
+        <item
+            android:id="@+id/analyt"
+            android:icon="@drawable/analytics"
+            android:title="@string/analytics"/>
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+
+    </group>
+</menu>
